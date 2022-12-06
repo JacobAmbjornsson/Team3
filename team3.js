@@ -4,6 +4,10 @@ const error3 = document.querySelector(".errmsg3")
 const inputemail = document.querySelector(".email")
 const inputpassword = document.querySelector(".password")
 const inputusername = document.querySelector(".username")
+const inputfirstname =document.querySelector(".firstname")
+const error4 = document.querySelector(".errmsg4")
+const error5 = document.querySelector(".errmsg5")
+const inputlastname = document.querySelector(".lastname")
 
 
 function sendForm(){
@@ -17,10 +21,7 @@ function sendForm(){
         inputusername.classList.remove("error")
         error1.classList.add("hidden")
         }
-    
-
-
-
+   
 
     if (inputemail.value =="") {
         errorEmail()
@@ -31,16 +32,13 @@ function sendForm(){
         error2.innerText = "Invalid email"
     } else {
         inputemail.classList.remove("error")
-        error2.classList.add("hidden")
+        error2.classList.add("hidden") 
           
     }
 
 
-
-
-
      if (inputpassword.value =="") {
-        inputpassword.classList.add("error")
+       
         error3.classList.add("errortext")
         error3.classList.remove("hidden")
         error3.innerText = "Empty Password"
@@ -50,6 +48,27 @@ function sendForm(){
         error3.classList.add("hidden")
         
     }
+
+    if (inputfirstname.value == "") {
+        inputfirstname.classList.add("error")
+        error4.classList.add("errortext")
+        error4.classList.remove("hidden")
+        error4.innerText = "Empty First name"
+    } else {
+        inputfirstname.classList.remove("error")
+        error4.classList.add("hidden")
+    }
+
+    if (inputlastname.value =="") {
+        inputlastname.classList.add("error")
+        error5.classList.add("errortext")
+        error5.classList.remove("hidden")
+        error5.innerText = "Empty Last name"
+    } else {
+        inputlastname.classList.remove("error")
+        error5.classList.add("hidden")
+    }
+    
 }
 function isValidEmailAddress(email) {
     return String(email)
