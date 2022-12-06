@@ -6,22 +6,33 @@ const inputpassword = document.querySelector(".password")
 const inputusername = document.querySelector(".username")
 
 
+
+
+
+
 function sendForm(){
+    inputusername.value = inputusername.value.trim()
+    // username errormsg
     if (inputusername.value == "") {
         inputusername.classList.add("error")
         error1.classList.add("errortext")
         error1.classList.remove("hidden")
         error1.innerText = "Empty username"
         
-    } else {
+    } else if (inputemail.value.toLowerCase().includes(inputusername.value.toLowerCase())){
+        inputusername.classList.add("error")
+        error1.classList.add("errortext")
+        error1.classList.remove("hidden")
+        error1.innerText = "to similar" 
+
+    }else{
+
         inputusername.classList.remove("error")
         error1.classList.add("hidden")
     }
     
 
-
-
-
+        // email errormsg
     if (inputemail.value =="") {
         errorEmail()
         error2.innerText = "Empty Email adress"
@@ -36,9 +47,33 @@ function sendForm(){
     }
 
 
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // password errormsg
      if (inputpassword.value =="") {
         inputpassword.classList.add("error")
         error3.classList.add("errortext")
