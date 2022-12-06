@@ -16,7 +16,7 @@ function sendForm(){
     } else {
         inputusername.classList.remove("error")
         error1.classList.add("hidden")
-        }
+    }
     
 
 
