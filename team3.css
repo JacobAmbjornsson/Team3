@@ -217,4 +217,9 @@ input:focus {
     flex-direction: row-reverse;
 }
 
-
+.error{
+    border-color: red;
+}
+.errortext{
+    color: red;
+}
