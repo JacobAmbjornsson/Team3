@@ -223,6 +223,9 @@ input:focus {
 .errortext{
     color: red;
 }
+.hidden {
+    visibility: hidden;
+}
 
 
 
