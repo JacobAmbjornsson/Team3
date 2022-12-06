@@ -50,36 +50,9 @@ function sendForm(){
           
     }
 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     // password errormsg
      if (inputpassword.value =="") {
-       
+       inputpassword.classList.add("error")
         error3.classList.add("errortext")
         error3.classList.remove("hidden")
         error3.innerText = "Empty Password"
