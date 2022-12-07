@@ -86,7 +86,7 @@ function sendForm(){
     }
 
 
- if (region.value.match(/^[a-zA-Z]+$/) || region.value == "") {
+ if (region.value.match(/^[a-öA-Ö]+$/) || region.value == "") {
     region.classList.remove("error")
     error6.classList.add("hidden")
 } else {
@@ -96,7 +96,7 @@ function sendForm(){
     error6.innerText = "Only Latin letters are allowed (A-Z)"
 } 
 
-if (town.value.match(/^[a-zA-Z]+$/) || town.value == "") {
+if (town.value.match(/^[a-öA-Ö]+$/) || town.value == "") {
     town.classList.remove("error")
     error7.classList.add("hidden")
 } else {
