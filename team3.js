@@ -14,7 +14,11 @@ const error7 = document.querySelector(".errmsg7")
 const town = document.querySelector(".town")
 
 
-
+function removeError(element){
+    element.classList.remove("error")
+    element.nextElementSibling.classList.add("hidden")
+    // error1.classList.add("hidden")
+}
 function sendForm(){
     inputusername.value = inputusername.value.trim()
     // username errormsg
@@ -98,7 +102,7 @@ if (town.value.match(/^[a-öA-Ö]+$/) || town.value == "") {
     town.classList.add("error")
     error7.classList.add("errortext")
     error7.classList.remove("hidden")
-    error7.innerText = "Only Latin letters are allowed (A-Ö)"
+    error7.innerText = "Only letters are allowed (A-Ö)"
     } 
 
 function isValidEmailAddress(email) {
@@ -127,20 +131,6 @@ function errorLastName() {
     error5.classList.remove("hidden")
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function errorUsername(){
     inputusername.classList.add("error")
         error1.classList.add("errortext")
@@ -151,30 +141,4 @@ function errorPassword(){
         error3.classList.add("errortext")
         error3.classList.remove("hidden")
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function errorUsername(){
-    inputusername.classList.add("error")
-        error1.classList.add("errortext")
-        error1.classList.remove("hidden")
 }
-function errorPassword(){
-    inputpassword.classList.add("error")
-        error3.classList.add("errortext")
-        error3.classList.remove("hidden")
-}
-
-
-  

@@ -18,13 +18,13 @@
         
         <div class="container-1 containerstyle">
             <h4>Username</h4>
-            <input type="text" class="inputstyle username">
+            <input type="text" class="inputstyle username" onkeyup="removeError(this)">
             <div class="errmsg1 hidden">Err</div>
         </div>
 
         <div class="container-2 containerstyle">
             <h4>Email adress</h4>
-            <input type="text" class="inputstyle email">
+            <input type="text" class="inputstyle email" onkeyup="removeError(this)">
             <div class="errmsg2 hidden">Err</div>
         </div>
 
@@ -33,13 +33,13 @@
 
             <div class="boxcont3">
                 <h4>Password</h4>
-            <input type="text" class="inputstyle password">
+            <input type="password" class="inputstyle password" onkeyup="removeError(this)">
             <div class="errmsg3 hidden">Err</div>
             </div>
 
             <div class="boxcont3">
                 <h4>Confirm Password</h4>
-            <input type="text" class="inputstyle">
+            <input type="password" class="inputstyle">
             <div class="errmsg hidden">Err</div>
             </div>
 
@@ -47,26 +47,38 @@
         
 
         <div class="container-4 containerstyle">
-            <select class="" name="" id="">
-                <option>Sweden</option>
-                <option>Norway</option>
-                <option>Denmark</option>
-            </select>
+
+            <div class="box-container">
+                <h4>Country</h4>
+                <select class="" name="" id="">
+                    <option>Sweden</option>
+                    <option>Norway</option>
+                    <option>Denmark</option>
+                </select>
+            </div>
+
         </div>
 
         <div class="container-5 containerstyle">
 
-            <select class="box1" name="" id="">
-                <option>English</option>
-                <option>Norwegian</option>
-                <option>Danish</option>
-            </select>
+            <div class="box-container">
+                <h4>Language</h4>
+                <select class="box1" name="" id="">
+                    <option>English</option>
+                    <option>Norwegian</option>
+                    <option>Danish</option>
+                </select>
+            </div>
 
-            <select class="box2" name="" id="">
-                <option>SEK - Swedish Kronor</option>
-                <option>Norway</option>
-                <option>Danmark</option>
-            </select>
+            <div class="box-container">
+                <h4>Currency</h4>
+                <select class="box2 name=" id="">
+                    <option>SEK - Swedish Kronor</option>
+                    <option>NOK - Norway</option>
+                    <option>DKK - Danmark</option>
+                </select>
+            </div>
+
         </div>
 
     
@@ -78,30 +90,83 @@
         <div class="container-6 containerstyle">
             <div class="boxcont3">
                 <h4>First name</h4>
-            <input type="text" class="inputstyle firstname">
+            <input type="text" class="inputstyle firstname" onkeyup="removeError(this)">
             <div class="errmsg4 hidden">Err</div>
             </div>
 
             <div class="boxcont3">
                 <h4>Last name</h4>
-            <input type="text" class="inputstyle lastname">
+            <input type="text" class="inputstyle lastname" onkeyup="removeError(this)">
             <div class="errmsg5 hidden" >Err</div>
             </div>
         </div>
 
         <div class="container-7 containerstyle"> 
-            <select class="box1" name="" id="">
-                <option>Birthday</option>
-            </select>
+
+            <div class="box-container">
+                <h4>Birthday</h4>
+                <select class="box1 scroll" name="" id="">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option> 
+                </select>
+            </div>
+
+            <div class="box-container">
+                <h4>Birth month</h4>
+                <select class="box2" name="" id="">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>Oktober</option>
+                    <option>November</option>
+                    <option>Devember</option>
+                </select>
+            </div>
+
+            <div class="box-container">
+                <h4>Birth year</h4>
+                <select class="box3" name="" id="">
+                    <option>1922</option>
+                    <option>1923</option>
+                </select>
+            </div>
+
             
-            <select class="box2" name="" id="">
-                <option>Birth month</option>
-            </select>
-
-            <select class="box3" name="" id="">
-                <option>Birth year</option>
-            </select>
-
         </div>
 
         <div class="container-8 containerstyle">
@@ -128,7 +193,9 @@
                 <h4>Postal code</h4>
                 <input type="text" class="inputstyle">
                 <div class="errmsg"></div>
-                </div>
+            </div>
+
+
         </div>
 
         <div class="container-10 containerstyle">
