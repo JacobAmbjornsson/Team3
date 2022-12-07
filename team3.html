@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,16 @@
     <title>Account</title>
     <link rel="stylesheet" href="team3.css">
 </head>
+
 <body>
-    
+
     <div class="container">
 
         <div class="titlecontainer">
             <h1>Account information</h1>
         </div>
-        
-        
+
+
         <div class="container-1 containerstyle">
             <h4>Username</h4>
             <input type="text" class="inputstyle username" onkeyup="removeError(this)">
@@ -28,23 +30,23 @@
             <div class="errmsg2 hidden">Err</div>
         </div>
 
-        
+
         <div class="container-3 containerstyle">
 
             <div class="boxcont3">
                 <h4>Password</h4>
-            <input type="password" class="inputstyle password" onkeyup="removeError(this)">
-            <div class="errmsg3 hidden">Err</div>
+                <input type="password" class="inputstyle password" onkeyup="removeError(this)">
+                <div class="errmsg3 hidden">Err</div>
             </div>
 
             <div class="boxcont3">
                 <h4>Confirm Password</h4>
-            <input type="password" class="inputstyle">
-            <div class="errmsg hidden">Err</div>
+                <input type="password" class="inputstyle confirm">
+                <div class="errmsg8 hidden">Err</div>
             </div>
 
         </div>
-        
+
 
         <div class="container-4 containerstyle">
 
@@ -81,27 +83,27 @@
 
         </div>
 
-    
+
 
         <div class="titlecontainer">
             <h1>Personal information</h1>
         </div>
-        
+
         <div class="container-6 containerstyle">
             <div class="boxcont3">
                 <h4>First name</h4>
-            <input type="text" class="inputstyle firstname" onkeyup="removeError(this)">
-            <div class="errmsg4 hidden">Err</div>
+                <input type="text" class="inputstyle firstname" onkeyup="removeError(this)">
+                <div class="errmsg4 hidden">Err</div>
             </div>
 
             <div class="boxcont3">
                 <h4>Last name</h4>
-            <input type="text" class="inputstyle lastname" onkeyup="removeError(this)">
-            <div class="errmsg5 hidden" >Err</div>
+                <input type="text" class="inputstyle lastname" onkeyup="removeError(this)">
+                <div class="errmsg5 hidden">Err</div>
             </div>
         </div>
 
-        <div class="container-7 containerstyle"> 
+        <div class="container-7 containerstyle">
 
             <div class="box-container">
                 <h4>Birthday</h4>
@@ -136,7 +138,7 @@
                     <option>28</option>
                     <option>29</option>
                     <option>30</option>
-                    <option>31</option> 
+                    <option>31</option>
                 </select>
             </div>
 
@@ -166,7 +168,7 @@
                 </select>
             </div>
 
-            
+
         </div>
 
         <div class="container-8 containerstyle">
@@ -178,20 +180,20 @@
         <div class="container-9 containerstyle">
 
             <div class="boxcont9">
-            <h4>Region (optional)</h4>
-            <input type="text" class="inputstyle region">
-            <div class="errmsg6"></div>
+                <h4>Region (optional)</h4>
+                <input type="text" class="inputstyle region" onkeyup="removeError(this)">
+                <div class="errmsg6"></div>
             </div>
 
             <div class="boxcont9">
-            <h4>Town / City</h4>
-            <input type="text" class="inputstyle town">
-            <div class="errmsg7 hidden">Err</div>
+                <h4>Town / City</h4>
+                <input type="text" class="inputstyle town" onkeyup="removeError(this)">
+                <div class="errmsg7 hidden">Err</div>
             </div>
 
             <div class="boxcont9">
                 <h4>Postal code</h4>
-                <input type="text" class="inputstyle">
+                <input type="text" class="inputstyle" onkeyup="removeError(this)">
                 <div class="errmsg"></div>
             </div>
 
@@ -199,13 +201,14 @@
         </div>
 
         <div class="container-10 containerstyle">
-        
+
             <button onclick="sendForm()">Submit</button>
-            
+
         </div>
-        
+
     </div>
 
     <script src="team3.js"></script>
 </body>
+
 </html>
