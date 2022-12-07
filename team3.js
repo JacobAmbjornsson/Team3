@@ -8,8 +8,10 @@ const inputfirstname =document.querySelector(".firstname")
 const error4 = document.querySelector(".errmsg4")
 const error5 = document.querySelector(".errmsg5")
 const inputlastname = document.querySelector(".lastname")
-
-
+const error6 = document.querySelector(".errmsg6")
+const region = document.querySelector(".region")
+const error7 = document.querySelector(".errmsg7")
+const town = document.querySelector(".town")
 
 
 
@@ -62,7 +64,7 @@ function sendForm(){
         error3.classList.add("hidden")
         
     }
-
+    
     if (inputfirstname.value == "") {
         inputfirstname.classList.add("error")
         error4.classList.add("errortext")
@@ -73,7 +75,7 @@ function sendForm(){
         error4.classList.add("hidden")
     }
 
-    if (inputlastname.value =="") {
+    if (inputlastname.value == "") {
         inputlastname.classList.add("error")
         error5.classList.add("errortext")
         error5.classList.remove("hidden")
@@ -82,8 +84,33 @@ function sendForm(){
         inputlastname.classList.remove("error")
         error5.classList.add("hidden")
     }
-    
+
+
+ if (region.value.match(/^[a-zA-Z]+$/) || region.value == "") {
+    region.classList.remove("error")
+    error6.classList.add("hidden")
+} else {
+    region.classList.add("error")
+    error6.classList.add("errortext")
+    error6.classList.remove("hidden")
+    error6.innerText = "Only Latin letters are allowed (A-Z)"
+} 
+
+if (town.value.match(/^[a-zA-Z]+$/) || town.value == "") {
+    town.classList.remove("error")
+    error7.classList.add("hidden")
+} else {
+    town.classList.add("error")
+    error7.classList.add("errortext")
+    error7.classList.remove("hidden")
+    error7.innerText = "Only Latin letters are allowed (A-Z)"
+} 
+
+
 }
+
+
+
 function isValidEmailAddress(email) {
     return String(email)
         .toLowerCase()
@@ -96,3 +123,7 @@ function errorEmail(){
     error2.classList.add("errortext")
     error2.classList.remove("hidden")
 }
+
+
+
+  
